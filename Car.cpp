@@ -27,39 +27,39 @@ void Car::chooseCar()
 		switch (answer)
 		{
 		  case 1: carName = "Toyota Camry";
-		  	  	  odometerPtr->getFuelGaugePtr()->setTankSize(17);
-		  	  	  odometerPtr->getFuelGaugePtr()->setMpg(30);
-		  	  	  validInput = true;
-		  	  	  break;
+		  	  odometerPtr->getFuelGaugePtr()->setTankSize(17);
+		  	  odometerPtr->getFuelGaugePtr()->setMpg(30);
+		  	  validInput = true;
+		  	  break;
 
 		  case 2: carName = "Dodge RAM";
-		  	  	  odometerPtr->getFuelGaugePtr()->setTankSize(29);
-		  	  	  odometerPtr->getFuelGaugePtr()->setMpg(17);
-		  	  	  validInput = true;
-		  	  	  break;
+		  	  odometerPtr->getFuelGaugePtr()->setTankSize(29);
+		  	  odometerPtr->getFuelGaugePtr()->setMpg(17);
+		  	  validInput = true;
+		  	  break;
 
 		  case 3: carName = "Bugatti Veyron";
-		  	  	  odometerPtr->getFuelGaugePtr()->setTankSize(26);
-		  	  	  odometerPtr->getFuelGaugePtr()->setMpg(11);
-		  	  	  validInput = true;
-		  	  	  break;
+		  	  odometerPtr->getFuelGaugePtr()->setTankSize(26);
+		  	  odometerPtr->getFuelGaugePtr()->setMpg(11);
+		  	  validInput = true;
+		  	  break;
 
 		  case 4: carName = "Suburu WRX STI";
-		  	  	  odometerPtr->getFuelGaugePtr()->setTankSize(17);
-		  	  	  odometerPtr->getFuelGaugePtr()->setMpg(20);
-		  	  	  validInput = true;
-		  	  	  break;
+		  	  odometerPtr->getFuelGaugePtr()->setTankSize(17);
+		  	  odometerPtr->getFuelGaugePtr()->setMpg(20);
+		  	  validInput = true;
+		  	  break;
 
 		  case 5: carName = "Hummer H3";
-		  	  	  odometerPtr->getFuelGaugePtr()->setTankSize(23);
-		  	  	  odometerPtr->getFuelGaugePtr()->setMpg(16);
-		  	  	  validInput = true;
-		  	  	  break;
+		  	  odometerPtr->getFuelGaugePtr()->setTankSize(23);
+		  	  odometerPtr->getFuelGaugePtr()->setMpg(16);
+		  	  validInput = true;
+		  	  break;
 
 		  default: cin.ignore(100, '\n');
-		  	  	   cin.clear();
-		  	  	   validInput = false;
-		  	  	   cout << "INVALID INPUT. Please enter a number between \"1\" and \"5\"." << endl;
+		  	   cin.clear();
+		  	   validInput = false;
+		  	   cout << "INVALID INPUT. Please enter a number between \"1\" and \"5\"." << endl;
 		}
 	} while (!validInput);
 }
