@@ -45,15 +45,15 @@ bool exit()
 		  	  	    break;
 		  case 'N':
 		  case 'n': cout << "Continuing...\n" << endl;
-		  	  	  	exit = false;
-		  	  	  	validInput = true;
-		  	  	  	break;
+		  	  	    exit = false;
+		  	  	    validInput = true;
+		  	  	    break;
 
 		  default: cin.ignore(100, '\n');
-		  	  	   cin.clear();
-		  	  	   cout << "INVALID INPUT, PLEASE ENTER EITHER \"y\" OR \"n\"." << endl;
-		  	  	   validInput = false;
-		  	  	   break;
+		  	   cin.clear();
+		  	   cout << "INVALID INPUT, PLEASE ENTER EITHER \"y\" OR \"n\"." << endl;
+		  	   validInput = false;
+		  	   break;
 		}
 	} while (!validInput);
 
