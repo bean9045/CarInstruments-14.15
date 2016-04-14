@@ -40,14 +40,14 @@ bool exit()
 		{
 		  case 'Y':
 		  case 'y': cout << "Exiting..." << endl;
-		  	  	    exit = true;
-		  	  	    validInput = true;
-		  	  	    break;
+		  	    exit = true;
+		  	    validInput = true;
+		  	    break;
 		  case 'N':
 		  case 'n': cout << "Continuing...\n" << endl;
-		  	  	    exit = false;
-		  	  	    validInput = true;
-		  	  	    break;
+		  	    exit = false;
+		  	    validInput = true;
+		  	    break;
 
 		  default: cin.ignore(100, '\n');
 		  	   cin.clear();
